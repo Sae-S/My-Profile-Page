@@ -20,11 +20,18 @@ h1{
   font-family: 'Merriweather', serif;
   color: #FFECC7;
   font-weight: 900;
-  font-size: xx-large;
-  line-height: 60px;
+  display: block;
 }
 
-h2, h3{
+h2{
+  font-family: 'Merriweather', serif;
+  color: #FFECC7;
+  font-size: xx-large;
+  line-height: 10px;
+  margin: 5px;
+}
+
+h3{
   font-family: 'Merriweather', serif;
   color: #FFECC7;
   font-size: x-large;
@@ -38,7 +45,6 @@ h2, h3{
   padding: 16px 24px;
   border-radius: 4px;
   text-decoration: none;
-  margin-top: 10px;
 }
 
 .btn-orange:hover {
@@ -58,6 +64,17 @@ h2, h3{
   margin: 20px auto;
 }
 
+.link-orange {
+  color: #F5B971;
+  text-decoration: none;
+}
+
+.link-orange:hover {
+  color: #85A392;
+  transition: .3s;
+  text-decoration: underline;
+}
+
 #cardfont {
   color: #85A392;
   margin: 20px auto;
@@ -65,9 +82,8 @@ h2, h3{
 }
 
 .card-clear {
-  padding: 10px;
+  padding: 3px;
   text-align: center;
-  margin: 3px 0;
 }
 
 .list-inline {
@@ -85,199 +101,34 @@ h2, h3{
   color: #FDD998;
 }
 
-.list-inline:hover {
+.list-inline a:hover {
   color: #F5B971;
 }
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
-  .img-square {
-    width: 200px;
-    height: 200px;
-    border-radius: 3%;
-    object-fit: cover;
-    object-position: 100% 50%;
-    box-shadow: 4px 4px 8px rgb(0 0 0 / 20%)
+  .container {
+    width: 700px;
+    display: inline
   }
 
-  body{
-    background-color: #85A392;
-    font-family: 'Karla', sans-serif;
-    color: #85A392;
-    font-size: large;
-    line-height: 30px;
-  }
-  h1{
-    font-family: 'Merriweather', serif;
-    color: #FFECC7;
-    font-weight: 900;
-    font-size: xx-large;
-    line-height: 60px;
-  }
-
-  h2, h3{
-    font-family: 'Merriweather', serif;
-    color: #FFECC7;
-    font-size: x-large;
-    line-height: 10px;
-    margin: 5px;
-  }
-
-  .btn-orange {
-    background-color: #FDD998;
-    color: #85A392;
-    padding: 16px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-
-  .btn-orange:hover {
-    background-color: #F5B971;
-    color: #85A392;
-    transition: .3s;
-    text-decoration: underline;
-  }
-
-  .card-white {
-    background-color: rgb(253, 242, 235);
-    box-shadow: 0 0 24px rgb(0 0 0 / 10%);
-    padding: 50px;
-    text-align: center;
-    border-radius: 3px;
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  #cardfont {
-    color: #85A392;
-    margin: 20px auto;
-    margin-bottom: 30px auto;
-  }
-
-  .card-clear {
-    padding: 10px;
-    text-align: center;
-    margin: 3px 0;
-  }
-
-  .list-inline {
-    list-style: none;
-    padding: 0;
-  }
-
-  .list-inline li {
-    display: inline;
-    font-size: 40px;
-    margin: 0 8px;
-  }
-
-  .list-inline a {
-    color: #FDD998;
-  }
-
-  .list-inline:hover {
-    color: #F5B971;
-  }
 }
-
-
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
-  .img-square {
-    width: 200px;
-    height: 200px;
-    border-radius: 3%;
-    object-fit: cover;
-    object-position: 100% 50%;
-    box-shadow: 4px 4px 8px rgb(0 0 0 / 20%)
-  }
-
-  body{
-    background-color: #85A392;
-    font-family: 'Karla', sans-serif;
-    color: #85A392;
-    font-size: large;
-    line-height: 30px;
-  }
-  h1{
-    font-family: 'Merriweather', serif;
-    color: #FFECC7;
-    font-weight: 900;
-    font-size: xx-large;
-    line-height: 60px;
-  }
-
-  h2, h3{
-    font-family: 'Merriweather', serif;
-    color: #FFECC7;
-    font-size: x-large;
-    line-height: 10px;
-    margin: 5px;
-  }
-
-  .btn-orange {
-    background-color: #FDD998;
-    color: #85A392;
-    padding: 16px 24px;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 10px;
-  }
-
-  .btn-orange:hover {
-    background-color: #F5B971;
-    color: #85A392;
-    transition: .3s;
-    text-decoration: underline;
-  }
-
-  .card-white {
-    background-color: rgb(253, 242, 235);
-    box-shadow: 0 0 24px rgb(0 0 0 / 10%);
-    padding: 50px;
-    text-align: center;
-    border-radius: 3px;
-    width: 80%;
-    margin: 20px auto;
-  }
-
-  #cardfont {
-    color: #85A392;
-    margin: 20px auto;
-    margin-bottom: 30px auto;
-  }
-
-  .card-clear {
-    padding: 10px;
-    text-align: center;
-    margin: 3px 0;
-  }
-
-  .list-inline {
-    list-style: none;
-    padding: 0;
-  }
-
-  .list-inline li {
-    display: inline;
-    font-size: 40px;
-    margin: 0 8px;
-  }
-
-  .list-inline a {
-    color: #FDD998;
-  }
-
-  .list-inline:hover {
-    color: #F5B971;
+  .container {
+    width: 500px;
+    display: inline
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    display: inline
+  }
   .img-square {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 3%;
     object-fit: cover;
     object-position: 100% 50%;
@@ -288,18 +139,26 @@ h2, h3{
     background-color: #85A392;
     font-family: 'Karla', sans-serif;
     color: #85A392;
-    font-size: large;
+    font-size: medium;
     line-height: 30px;
   }
   h1{
     font-family: 'Merriweather', serif;
     color: #FFECC7;
     font-weight: 900;
+    display: block;
     font-size: xx-large;
-    line-height: 60px;
   }
 
-  h2, h3{
+  h2{
+    font-family: 'Merriweather', serif;
+    color: #FFECC7;
+    font-size: xx-large;
+    line-height: 10px;
+    margin: 5px;
+  }
+
+  h3{
     font-family: 'Merriweather', serif;
     color: #FFECC7;
     font-size: x-large;
@@ -310,10 +169,9 @@ h2, h3{
   .btn-orange {
     background-color: #FDD998;
     color: #85A392;
-    padding: 16px 24px;
+    padding: 10px 15px;
     border-radius: 4px;
     text-decoration: none;
-    margin-top: 10px;
   }
 
   .btn-orange:hover {
@@ -333,6 +191,17 @@ h2, h3{
     margin: 20px auto;
   }
 
+  .link-orange {
+    color: #F5B971;
+    text-decoration: none;
+  }
+
+  .link-orange:hover {
+    color: #85A392;
+    transition: .3s;
+    text-decoration: underline;
+  }
+
   #cardfont {
     color: #85A392;
     margin: 20px auto;
@@ -340,9 +209,8 @@ h2, h3{
   }
 
   .card-clear {
-    padding: 10px;
+    padding: 3px;
     text-align: center;
-    margin: 3px 0;
   }
 
   .list-inline {
@@ -360,7 +228,7 @@ h2, h3{
     color: #FDD998;
   }
 
-  .list-inline:hover {
+  .list-inline a:hover {
     color: #F5B971;
   }
 }
